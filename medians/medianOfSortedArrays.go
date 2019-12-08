@@ -25,7 +25,7 @@ func (m *MedianFinder) FindMedianOfSorted(arrA []int, arrB []int) int {
 			m.processTail(medianRightEl, arrB, ptrB)
 		} else if ptrB == n {
 			// process rest of arrA, we have consumed all of B according to the ptr
-			m.processTail(medianRightEl, arrA, ptrB)
+			m.processTail(medianRightEl, arrA, ptrA)
 		} else {
 			// process the arrays, comparing the element of the sorted
 			if arrA[ptrA] < arrB[ptrB] {
